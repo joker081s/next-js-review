@@ -1,4 +1,5 @@
-"use server";
+export const dynamic = "force-dynamic";
+
 import Logo from "./(components)/Logo";
 import Review from "./(components)/Review";
 import { getReviews } from "./(services)/services";

@@ -1,7 +1,7 @@
 const URL =
   "https://script.google.com/macros/s/AKfycbzFIfHBmX0a8_3X_40akF2gucuGInnfVHES7ncZwNLz-69ytdAXOEo6ZiuWgU5yFbegJQ/exec";
 export async function getReviews() {
-  const response = await fetch(`${URL}`);
+  const response = await fetch(`${URL}`, { cache: "no-store" });
   const result = await response.json();
 
   if (result.status === "ok") {
